@@ -26,7 +26,7 @@ export default class Command extends BaseCommand {
         { jid: M.from },
         { $set: { bot: "all" } }
       );
-      return void M.reply(`🟩 *✴🎀𝓜𝓐𝓡𝓘𝓝𝓔🎀✴* is active now.`);
+      return void M.reply(`🟩 *🎀𝗖𝗛𝗜𝗧𝗢𝗚𝗘🎀* is active now.`);
     }
     if (i === bot) {
       if (this.client.user.name === i)
