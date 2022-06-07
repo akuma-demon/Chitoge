@@ -39,7 +39,7 @@ export default class Command extends BaseCommand {
 		}
 		this.run = async (M: typings.ISimplifiedMessage): Promise<void> => {
 			const chitoge =
-				"https://c.tenor.com/1ax7LgaLLKUAAAPo/marin-kitagawa.mp4";
+				"https://c.tenor.com/gxlnN57pWyUAAAPo/anime.mp4";
 			return void this.client.sendMessage(
 				M.from,
 				{ url: chitoge },
@@ -47,9 +47,9 @@ export default class Command extends BaseCommand {
 				{
 					quoted: M.WAMessage,
 					mimetype: Mimetype.gif,
-					caption: `━━━❰✴🎀𝓜𝓐𝓡𝓘𝓝𝓔🎀✴❱━━━\n\n🔮 *Groups: ${
+					caption: `━━━❰🎀𝗖𝗛𝗜𝗧𝗢𝗚𝗘🎀❱━━━\n\n🔮 *Groups: ${
 				chats.length
-					}*\n\n🚦 *Uptime: ${uptime()}*\n\n🦆 *My cute people: ${users}*\n\n💢 *Banned Users: ${uban}*\n\n\n`,
+					}*\n\n🚦 *Uptime: ${uptime()}*\n\n🎀 *My cute people: ${users}*\n\n🎀 *Banned Users: ${uban}*\n\n\n`,
 				}
 			);
 		};
