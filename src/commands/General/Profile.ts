@@ -33,7 +33,7 @@ export default class Command extends BaseCommand {
         try {
             pfp = await this.client.getProfilePicture(user)
         } catch (err) {
-            M.reply(`Profile Picture not Accessible of ${username} must be an idiot`)
+            M.reply(`Profile Picture not Accessible of ${username} must be an idiot`);
             pfp =
                 'https://i.ibb.co/Hr1RHWM/download.jpg'
         }
