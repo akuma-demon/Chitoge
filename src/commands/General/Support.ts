@@ -19,9 +19,7 @@ export default class Command extends BaseCommand {
     run = async (M: ISimplifiedMessage): Promise<void> => {
         (await this.client.sendMessage(
         M.sender.jid,
-                `*📮𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽𝘀*\n\n
-                 *「ENJOY GROUP LINK 」*:https://chat.whatsapp.com/EeIT4nf7PBUD8Kwbm4FgJC\n
-                 *「owner's number」*:👑-1 https://wa.me//+917892202052\n\n👑-2 https://wa.me//+9845987565`,
+        `    ♥️MY MASTER GROUP♥️\n\n*🎀CHITOGE Support:🎀* *https://chat.whatsapp.com/EeIT4nf7PBUD8Kwbm4FgJC*\n\n*🎀Follow me on insta🎀*:*https://www.instagram.com/akuma__24/*`,
            MessageType.text
         ))
         const n = [
@@ -30,7 +28,7 @@ export default class Command extends BaseCommand {
         let rin = n[Math.floor(Math.random() * n.length)]
         return void this.client.sendMessage(M.from, { url: rin }, MessageType.image, {quoted:M.WAMessage,
             mimetype: Mimetype.jpeg,
-            caption: `Regarding this, I have sent you a personal message in your DM📪\n` }
+            caption: `Regarding this, I have sent you a personal message in your DM🎀\n` }
         )
  
         }
