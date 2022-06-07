@@ -23,11 +23,9 @@ export default class Command extends BaseCommand {
 		{ joined }: IParsedArgs
 	): Promise<void> => {
 		const stickers = [
-			'https://c.tenor.com/XQXzBqs3utEAAAAC/marin-kitagawa.gif',
-	    		'https://c.tenor.com/F-iYHvwyTtkAAAAC/marin-marin-smiling.gif',
-	    		'https://c.tenor.com/uCRClnnY4WUAAAAC/my-dress-up-darling-sono-bisque-doll-wa-koi-wo-suru.gif',
-	    		'https://c.tenor.com/uDWf9_1YdfgAAAAC/marin-kitagawa-marin.gif',
-	    		'https://c.tenor.com/mFX0gzBmX68AAAAC/marin-wink-marin-cool.gif',
+			'https://c.tenor.com/T8UOfSDpvIoAAAPo/chitoge-kirisaki-nisekoi.mp4',
+	    		'https://c.tenor.com/7fzwLIcsLLcAAAPo/chitoge-kirisaki-nisekoi.mp4',
+	    		'https://c.tenor.com/tK5U6MLVdxQAAAPo/chitoge-kirisaki.mp4',
 		];
 		const option = ["--s", "--sticker"];
 		const random = stickers[Math.floor(Math.random() * stickers.length)];
@@ -54,7 +52,7 @@ export default class Command extends BaseCommand {
 			));
 		const sticker: any = await new Sticker(random, {
 			pack: "READ QUOTED MESSAGE",
-			author: "🎀𝓜𝓐𝓡𝓘𝓝𝓔🎀",
+			author: "🎀𝗖𝗛𝗜𝗧𝗢𝗚𝗘🎀",
 			quality: 90,
 			type: "full",
 			categories: ["🎊"],
