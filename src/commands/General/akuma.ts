@@ -17,7 +17,7 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
         const n = [
-            'https://telegra.ph/file/b59ce7f073c12a56fc05c.mp4',
+            'https://i.ibb.co/QQK0tcS/Nisekoi-Chitoge-Kirisaki-Lenovo-K900-wallpaper-1080x1920.jpg',
         ]
         let rin = n[Math.floor(Math.random() * n.length)]
         return void this.client.sendMessage(M.from, { url: rin }, MessageType.image, {quoted:M.WAMessage,
@@ -33,7 +33,7 @@ https://facebook.com/groups/600441174428472/
 🎀𝐈𝐍𝐒𝐓𝐀𝐆𝐑𝐀𝐌;
 https://www.instagram.com/akuma__24/
       
-⪼𝖲𝖾𝖾 𝗒𝖺𝗁 have a great day💖💖` }
+⪼𝖲𝖾𝖾 𝗒𝖺𝗁 have a great day🎀🎀` }
         )
     }
 }
