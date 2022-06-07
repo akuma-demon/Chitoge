@@ -29,14 +29,8 @@ export default class Command extends BaseCommand {
 			return void (await M.reply(`Please provide the Broadcast Message.`));
 		const term = joined.trim();
 		const gifs = [
-			    'https://c.tenor.com/Vf6ZPQU3zMoAAAPo/marin-kitagawa-marin.mp4',
-	     		    'https://c.tenor.com/gu0EZJfpXP8AAAPo/marin-kitagawa-my-dress-up-darling.mp4',
-	   		    'https://c.tenor.com/LXLRCmwR9KIAAAPo/kitagawa-marin-marin-kitagawa.mp4',
-	  		    'https://c.tenor.com/9aXyxmnYW7oAAAPo/my-dress-up-darling-sono-bisque-doll-wa-koi-wo-suru.mp4',
-	 		    'https://c.tenor.com/Q7h_Uz-lf0YAAAPo/my-dress-up-darling-sono-bisque-doll-wa-koi-wo-suru.mp4',
-			    'https://c.tenor.com/Z75HOpn46VgAAAPo/kitagawa-marin-marin-kitagawa.mp4',
-			    'https://c.tenor.com/Y8xTSG60n4cAAAPo/my-dress-up-darling-my-dress-up-darling-gif.mp4',
-			    'https://c.tenor.com/XyfPrGSZizsAAAPo/marin-kitagawa-marin.mp4',
+			    'https://c.tenor.com/T8UOfSDpvIoAAAPo/chitoge-kirisaki-nisekoi.mp4',
+	     		    'https://c.tenor.com/7fzwLIcsLLcAAAPo/chitoge-kirisaki-nisekoi.mp4',
 		];
 		const selected = gifs[Math.floor(Math.random() * gifs.length)];
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -47,7 +41,7 @@ export default class Command extends BaseCommand {
 			.map((jids) => (jids.includes("g.us") ? jids : null))
 			.filter((v) => v);
 		for (let i = 0; i < chats.length; i++) {
-			const text = `*⚡「🎀𝓜𝓐𝓡𝓘𝓝𝓔🎀 BROADCAST」⚡*\n\n${term}\n\n Regards ~ *${M.sender.username}*`;
+			const text = `*🎀「🎀𝗖𝗛𝗜𝗧𝗢𝗚𝗘🎀 𝗕𝗥𝗢𝗔𝗗𝗖𝗔𝗦𝗧」🎀*\n\n${term}\n\n Regards ~ *${M.sender.username}*`;
 			this.client.sendMessage(chats[i], { url: selected }, MessageType.video, {
 				mimetype: Mimetype.gif,
 				caption: `${text}`,
@@ -56,6 +50,6 @@ export default class Command extends BaseCommand {
 				},
 			});
 		}
-		await M.reply(`✅ Broadcast Message sent to *${chats.length} groups*.`);
+		await M.reply(`🎀 Broadcast Message sent to *${chats.length} groups*.`);
 	};
 }
