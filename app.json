@@ -1,6 +1,6 @@
 {
     
-  "name": "𝐂𝐇𝐈𝐓𝐎𝐆𝐄",
+  "name": "Chitoge",
   "description": "A WhatsApp Bot With Rich NSFW Features based on chitoge.",
   "keywords": [
       "bot",
@@ -14,7 +14,7 @@
   ],
   "website": "https://github.com/ShinNouzen/Chitoge#readme",
   "repository": "https://github.com//akumasugi/Chitoge.git",
-  "logo": "https://i.pinimg.com/236x/8b/15/2b/8b152bfa29ed8e5af612023c0933b220.jpg",
+  "logo": "https://i.ibb.co/Lt10hgK/c4fc15c2a716b4f260662d3f1eb7ae96.jpg",
   "success_url": "/",
   "env": {
       "PREFIX": {
